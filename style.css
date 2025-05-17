@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.img-logo {
+    max-width: 180px;
+    height: auto;
+}
+
+
+.navbar li a {
+    font-family: poppins, sans-serif;
+    font-size: medium;
+    font-weight: medium;
+    color: #0F112A;
+}
+
+.btn-contact {
+    font-family: poppins, sans-serif;
+    font-size: medium;
+    font-weight: medium;
+    background-color: #0F112A;
+    color: #F2F2F2;
+    border-radius: 50px;
+    padding: 5px 18px;
+}
+
+.offcanvas {
+    width: 250px;
+    /* Lebar sidebar */
+}
+
+.offcanvas .nav-link {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.offcanvas-body li a {
+    font-family: poppins, sans-serif;
+    font-size: small;
+    font-weight: medium;
+    color: #0F112A;
+}
+
+
+.white-section {
+    background-color: white;
+    padding: 80px 0;
+}
+
+
+.position-relative {
+    height: 100%;
+}
+
+.responsive-heading {
+    color: #0F112A;
+}
+
+.responsive-heading h1 {
+    font-size: 50px;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+}
+
+.responsive-heading p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 5px;
+    padding-right: 0px;
+    font-family: roboto, sans-serif;
+}
+
+.btn-project {
+    border: 2px solid #0F112A;
+    background-color: transparent;
+    color: #0F112A;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    width: 180px;
+}
+
+.btn-project:hover {
+    background-color: #0F112A;
+    color: #F2F2F2;
+}
+
+@media (min-width: 1200px) {
+    .responsive-heading h1 {
+        font-size: 90px;
+        font-family: poppins, sans-serif;
+        font-weight: 700;
+    }
+
+    .responsive-heading p {
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: 20px;
+        padding-right: 100px;
+        font-family: roboto, sans-serif;
+    }
+
+    .btn-project {
+        border: 2px solid #0F112A;
+        background-color: transparent;
+        color: #0F112A;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        width: 200px;
+    }
+
+    .btn-project:hover {
+        background-color: #0F112A;
+        color: #F2F2F2;
+    }
+}
+
+.text-product h1 {
+    font-family: poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0F112A;
+}
+
+.text-product p {
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #0F112A;
+    margin-top: 10px;
+}
+
+
+@media (min-width: 1200px) {
+    .text-product {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    .text-product h1 {
+        font-family: poppins, sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        color: #0F112A;
+        text-align: center;
+    }
+    
+    .text-product p {
+        font-family: roboto, sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        color: #0F112A;
+        text-align: center;
+        margin-top: 20px;
+    }
+}

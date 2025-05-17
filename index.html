@@ -1,16 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainworks Landing Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+        <div class="container">
+            <img src="assets/Dummy-Logo2.png" alt="" class="img-logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products <i class="fa-solid fa-chevron-down ms-1 fa-sm"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Rain Pro Gutter System</a></li>
+                            <li><a class="dropdown-item" href="#">Wisy</a></li>
+                            <li><a class="dropdown-item" href="#">VTO Germany</a></li>
+                            <li><a class="dropdown-item" href="#">Penguin</a></li>
+                            <li><a class="dropdown-item" href="#">RainAid</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#waterSavingTips">Water Saving Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutUs">About Us</a></li>
+                    <li class="nav-item"><button type="button" class="btn btn-contact">Contact</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarNav">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#productsCollapse" role="button"
+                        aria-expanded="false" aria-controls="productsCollapse">
+                        Products <i class="fa-solid fa-chevron-down ms-1 fa-sm"></i>
+                    </a>
+                    <div class="collapse ps-3" id="productsCollapse">
+                        <ul class="list-unstyled">
+                            <li><a class="nav-link" href="#">Rain Pro Gutter System</a></li>
+                            <li><a class="nav-link" href="#">Wisy</a></li>
+                            <li><a class="nav-link" href="#">VTO Germany</a></li>
+                            <li><a class="nav-link" href="#">Penguin</a></li>
+                            <li><a class="nav-link" href="#">RainAid</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="#waterSavingTips">Water Saving Tips</a></li>
+                <li class="nav-item"><a class="nav-link" href="#aboutUs">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- White Section -->
+    <section class="white-section" id="home">
+        <!-- home page -->
+        <div class="container">
+            <!-- text section -->
+            <div class="row align-items-center mb-3">
+                <div class="row align-items-stretch">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="responsive-heading h-100 d-flex flex-column">
+                            <h1>Rain Water <br> Harvesting Specialist</h1>
+                            <p>
+                                Supplying Indonesia with quality rainwater harvesting and water saving solutions since
+                                2009
+                            </p>
+                            <button type="button" class="btn btn-project">View Our Project</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="position-relative rounded-4 overflow-hidden h-100">
+                            <img src="assets/gutter-illustration.png" alt="Main System" class="img-fluid rounded-4"
+                                usemap="#image-map">
+                            <map name="image-map">
+                                <area target="" alt="Multimedia Filter" title="Multimedia Filter"
+                                    href="https://smart-water.com.au/" coords="89,1955,525,1951,529,2284,89,2292"
+                                    shape="poly">
+                            </map>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- img section -->
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <img src="assets/img-home-1.png" alt="img 1" class="img-fluid rounded-4">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="assets/img-home-2.png" alt="img 2" class="img-fluid rounded-4">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="assets/img-home-3.png" alt="img 3" class="img-fluid rounded-4">
+                </div>
+            </div>
+        </div>
+
+        <!-- products page -->
+        <div class="container my-5 py-5" id="products">
+            <div class="text-product ">
+                <h1>Top-Quality Rainwater Products</h1>
+                <p>Discover our high-quality rainwater harvesting products, from durable gutters to efficient filtration systems—designed to support sustainable living and long-term performance.</p>
+            </div>
+            
+
+        </div>
+
+    </section>
+
+
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+    <script>
+        // Initialize image map resizer
+        imageMapResize();
+    </script>
 </body>
+
 </html>
