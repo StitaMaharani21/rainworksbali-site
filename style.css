@@ -409,39 +409,61 @@ body {
     padding: 80px 0;
 }
 
-/* Default (Small screen <768px) */
-.responsive-contact-text h1 {
-    font-size: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+.card-bg {
+    background-color: #4e78ff;
     color: white;
+    border: none;
 }
 
+.card-bg input,
+.card-bg textarea {
+    background-color: white;
+    color: #000;
+    border: none;
+}
+
+.card-bg input::placeholder,
+.card-bg textarea::placeholder {
+    color: #999;
+}
+
+.card-bg .form-label {
+    color: white;
+    font-weight: 500;
+}
+
+.btn-send {
+    background-color: #003aff;
+    border: none;
+}
+
+.btn-send:hover {
+    background-color: #002ecc;
+}
+
+.responsive-contact-text h1,
 .responsive-contact-text h2 {
-    font-size: 24px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: white;
 }
 
-.responsive-contact-text p {
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    text-align: justify;
-}
-
+.responsive-contact-text p,
 .responsive-contact-text a {
-    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    text-align: justify;
 }
 
-/* Medium screen (≥768px) */
+.responsive-contact-text {
+    padding-right: 30px;
+}
+
 @media (min-width: 768px) {
     .responsive-contact-text {
-        margin-bottom: 80px;
+        padding-right: 60px;
     }
 
     .responsive-contact-text h1 {
@@ -452,18 +474,18 @@ body {
         font-size: 30px;
     }
 
-    .responsive-contact-text p {
-        font-size: 18px;
-        padding-right: 30px;
-    }
-
+    .responsive-contact-text p,
     .responsive-contact-text a {
         font-size: 18px;
     }
 }
 
-/* Large screen (≥992px) */
 @media (min-width: 992px) {
+    .light-blue-section {
+        background-color: #2B40F5;
+        padding: 80px 0 40px 0;
+    }
+
     .responsive-contact-text h1 {
         font-size: 55px;
     }
@@ -472,21 +494,18 @@ body {
         font-size: 35px;
     }
 
-    .responsive-contact-text p {
-        font-size: 20px;
-    }
-
+    .responsive-contact-text p,
     .responsive-contact-text a {
         font-size: 20px;
     }
 }
 
-/* Extra Large screen (≥1200px) */
 @media (min-width: 1200px) {
-    .responsive-contact-text {
-        margin-bottom: 80px;
+    .light-blue-section {
+        background-color: #2B40F5;
+        padding: 80px 0 40px 0;
     }
-
+    
     .responsive-contact-text h1 {
         font-size: 70px;
     }
@@ -495,15 +514,12 @@ body {
         font-size: 40px;
     }
 
-    .responsive-contact-text p {
-        font-size: 24px;
-        padding-right: 100px;
-    }
-
+    .responsive-contact-text p,
     .responsive-contact-text a {
         font-size: 24px;
     }
 }
+
 
 
 .card-bg {
