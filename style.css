@@ -118,7 +118,7 @@ body {
     }
 
     .responsive-heading p {
-        font-size: 20px;
+        font-size: 24px;
         margin-top: 15px;
         padding-right: 50px;
     }
@@ -136,9 +136,9 @@ body {
     }
 
     .responsive-heading p {
-        font-size: 24px;
+        font-size: 32px;
         margin-top: 20px;
-        padding-right: 100px;
+        padding-right: 200px;
     }
 }
 
@@ -505,7 +505,7 @@ body {
         background-color: #2B40F5;
         padding: 80px 0 40px 0;
     }
-    
+
     .responsive-contact-text h1 {
         font-size: 70px;
     }
@@ -640,4 +640,16 @@ body {
         font-weight: 700;
         color: white;
     }
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.image-container {
+    overflow: hidden;
+    background-color: #eee;
 }
